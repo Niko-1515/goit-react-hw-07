@@ -4,7 +4,7 @@ import axios from 'axios'; // 'axios' для HTTP-запитів
 import { createAsyncThunk } from '@reduxjs/toolkit';
 
 // Базова URL-адреса для запитів
-axios.defaults.baseURL = 'https://679f4b0824322f8329c346dd.mockapi.io';
+axios.defaults.baseURL = 'https://zawody-u8zk.onrender.com';
 
 // Операція для отримання всіх контактів
 export const fetchContactsThunk = createAsyncThunk(
@@ -12,9 +12,11 @@ export const fetchContactsThunk = createAsyncThunk(
   async (_, thunkAPI) => {
     try {
       // Виконання GET-запиту
-      const response = await axios.get('/contacts');
+      const response = await axios.get('/riders');
       // Повернення отриманих даних
-      return response.data;
+      console.log(response.data.data);
+      
+      return response.data.data;
     } catch (error) {
       // Обробка помилки
       return thunkAPI.rejectWithValue(error.message);

@@ -26,7 +26,8 @@ function App() {
     <>
       {/* Ініціалізуємо сповіщення (Toaster) */}
       <Toaster position="top-right" reverseOrder={false} />
-      <h1 className="title">Phonebook</h1>
+      <h1 className="title">Zarejestruj się i szalej 😜
+      </h1>
       {/* Форма для додавання нового контакту */}
       <ContactForm />
       {/* Поле для пошуку контактів */}

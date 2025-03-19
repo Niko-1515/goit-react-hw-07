@@ -28,7 +28,7 @@ const SearchBox = () => {
   return (
     <>
       <label htmlFor={searchId} className={styles.inputLabel}>
-        Find contacts by name
+        Wyszykaj zawodnika po imieniu
       </label>
       <div className={styles.inputWrap}>
         {/* Поле вводу для пошуку контактів */}
